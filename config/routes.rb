@@ -1,11 +1,8 @@
 Rails.application.routes.draw do
   root 'top#index'
-  get 'articles/new'
-
-  get 'welcome/index'
   
   resources :articles do
-	resources :comments
+    resources :comments, only: %i(create destroy)
   end
   
   # root 'welcome#index'
