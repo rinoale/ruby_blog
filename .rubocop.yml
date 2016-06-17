@@ -1,1 +1,5 @@
 inherit_from: .rubocop_todo.yml
+
+#deprecating lists
+Style/Documentation:
+  Enabled: false

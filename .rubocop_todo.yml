@@ -34,25 +34,6 @@ Style/ClassAndModuleChildren:
   Exclude:
     - 'test/test_helper.rb'
 
-# Offense count: 13
-Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'app/controllers/application_controller.rb'
-    - 'app/controllers/articles_controller.rb'
-    - 'app/controllers/comments_controller.rb'
-    - 'app/controllers/top_controller.rb'
-    - 'app/helpers/application_helper.rb'
-    - 'app/helpers/articles_helper.rb'
-    - 'app/helpers/comments_helper.rb'
-    - 'app/helpers/top_helper.rb'
-    - 'app/models/article.rb'
-    - 'app/models/comment.rb'
-    - 'config/application.rb'
-    - 'db/migrate/20150813013109_create_articles.rb'
-    - 'db/migrate/20150827161952_create_comments.rb'
-
 # Offense count: 1
 # Cop supports --auto-correct.
 Style/EmptyLines:
