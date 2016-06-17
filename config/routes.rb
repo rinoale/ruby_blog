@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   resources :articles do
     resources :comments, only: %i(create destroy)
   end
+
+  get    'login' => 'login#new'
+  post   'login' => 'login#create'
+  delete 'login' => 'login#destroy'
   
   # root 'welcome#index'
 
