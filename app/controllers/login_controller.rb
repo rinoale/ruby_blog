@@ -3,6 +3,7 @@ class LoginController < ApplicationController
   end
 
   def create
+    redirect_to :root
   end
 
   def destroy
