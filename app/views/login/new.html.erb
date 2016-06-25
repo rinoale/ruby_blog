@@ -1,15 +1,19 @@
 <h1>Log in</h1>
+<div class='container'>
+  <div class='row'>
+    <%= render 'layouts/forms/menu_node' %>
+  </div>
+  <div class='row'>
+    <div>
+      <%= form_for(:user, :url => url_for(controller => 'login', :action => 'create')) do |f| %>
+        <%= f.label :emailid %>
+        <%= f.email_field :emailid %>
 
-<div class='row'>
-  <div>
-    <%= form_for(:user, :url => url_for(controller => 'login', :action => 'create')) do |f| %>
-      <%= f.label :emailid %>
-      <%= f.email_field :emailid %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.submit "Log in" %>
-    <% end %>
+        <%= f.submit "Log in" %>
+      <% end %>
+    </div>
   </div>
 </div>

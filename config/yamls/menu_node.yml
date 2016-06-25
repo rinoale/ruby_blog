@@ -1,0 +1,59 @@
+menunode:
+  Home:
+    class: menu-icon menu-icon-1
+    link: http://192.168.33.11:3000
+  Online_Radio:
+    class: menu-icon menu-icon-2
+    subnode:
+      Katy_Perry:
+        link: http://192.168.33.11:3000
+      Miley_Cyrus:
+        link: http://192.168.33.11:3000
+      Selena_Gomez:
+        link: http://192.168.33.11:3000
+  Top_25:
+    class: menu-icon menu-icon-3
+    subnode:
+      Miley_Cyrus:
+        link: http://192.168.33.11:3000
+      Katy_Perry:
+        link: http://192.168.33.11:3000
+      Lene_Marlin:
+        link: http://192.168.33.11:3000
+  TV_show:
+    class: menu-icon menu-icon-4
+    link: http://192.168.33.11:3000
+    subnode:
+      Katy_Perry:
+        Album_1:
+          link: http://192.168.33.11:3000
+        Album_2:
+          link: http://192.168.33.11:3000
+        Album_3:
+          link: http://192.168.33.11:3000
+      Miley_Cyrus:
+        Album_1:
+          link: http://192.168.33.11:3000
+        Album_2:
+          link: http://192.168.33.11:3000
+        Album_3:
+          link: http://192.168.33.11:3000
+      Selena_Gomez:
+        Album_1:
+          link: http://192.168.33.11:3000
+        Album_2:
+          link: http://192.168.33.11:3000
+        Album_3:
+          link: http://192.168.33.11:3000
+  News:
+    class: menu-icon menu-icon-5
+    link: http://192.168.33.11:3000
+  Videos:
+    class: menu-icon menu-icon-6
+    link: http://192.168.33.11:3000
+  Gallery:
+    class: menu-icon menu-icon-7
+    link: http://192.168.33.11:3000
+  Contact_Us:
+    class: menu-icon menu-icon-8
+    link: http://192.168.33.11:3000
