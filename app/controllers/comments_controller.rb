@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-
 	http_basic_authenticate_with name: "rinoale", password: "4478", only:
 	:destroy
 

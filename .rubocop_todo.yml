@@ -13,15 +13,6 @@ Style/ClassAndModuleChildren:
   Exclude:
     - 'test/test_helper.rb'
 
-# Offense count: 2
-# Cop supports --auto-correct.
-# Configuration parameters: EnforcedStyle, SupportedStyles.
-# SupportedStyles: empty_lines, no_empty_lines
-Style/EmptyLinesAroundClassBody:
-  Exclude:
-    - 'app/controllers/comments_controller.rb'
-    - 'test/controllers/articles_controller_test.rb'
-
 # Offense count: 1
 # Cop supports --auto-correct.
 # Configuration parameters: AllowForAlignment, ForceEqualSignAlignment.
