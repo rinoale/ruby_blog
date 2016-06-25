@@ -17,11 +17,10 @@ class LoginController < ApplicationController
   def create_menu_node(menu_node, sub = false)
     html = ''
     menu_node.each do |menu_name, attr|
-      html += "<li>"
-      html += "<a href='#{attr['link'] || '#'}'>"
-      html += "<i class='#{attr['class']}'></i>#{menu_name.tr('_', ' ')}</a>"
-      html += create_menu_node(attr['subnode'], true) if attr['subnode']
-      html += '</li>'
+      node = attr['class'] ? format("<i class='%s'></i>%s", attr['class'], menu_name.tr('_', ' ')) : menu_name.tr('_', ' ')
+      node = format("<a href='%s'>%s</a>", attr['link'] || '#', node)
+      node += create_menu_node(attr['subnode'], true) if attr['subnode']
+      html += format("<li>%s</li>", node)
     end
 
     sub ? format("<ul>%s</ul>", html).html_safe : html.html_safe
