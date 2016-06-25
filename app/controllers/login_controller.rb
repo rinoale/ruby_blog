@@ -20,9 +20,9 @@ class LoginController < ApplicationController
       node = attr['class'] ? format("<i class='%s'></i>%s", attr['class'], menu_name.tr('_', ' ')) : menu_name.tr('_', ' ')
       node = format("<a href='%s'>%s</a>", attr['link'] || '#', node)
       node += create_menu_node(attr['subnode'], true) if attr['subnode']
-      html += format("<li>%s</li>", node)
+      html += format('<li>%s</li>', node)
     end
 
-    sub ? format("<ul>%s</ul>", html).html_safe : html.html_safe
+    sub ? format('<ul>%s</ul>', html).html_safe : html.html_safe
   end
 end

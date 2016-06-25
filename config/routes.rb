@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'top#index'
-  
+
   resources :articles do
     resources :comments, only: %i(create destroy)
   end
@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get    'login' => 'login#new'
   post   'login' => 'login#create'
   delete 'login' => 'login#destroy'
-  
+
   # root 'welcome#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
